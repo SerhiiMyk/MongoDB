@@ -67,7 +67,7 @@
 
 // 13) Знайти батьків які не працюють
 // db.getCollection('students').find(
-//             {"parents.$[].professin":{$exists:false}},
+//             {"parents.$[].profession":{$exists:false}},
 //             {
 //              "parents.name":1,
 //              "parents.gender":1
@@ -76,8 +76,8 @@
 
 // 14) Не працюючих батьків влаштувати офіціантами
 // db.getCollection('students').updateMany(
-//             {"parents.$[].professin":{$exists:false}},
-//             {$set:{"parents.$[].professin":'waiter'}}
+//             {"parents.$[].profession":{$exists:false}},
+//             {$set:{"parents.$[].profession":'waiter'}}
 //         );
             
 // 15) Вигнати дітей, які мають середній бал менше ніж 2.5
